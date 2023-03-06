@@ -17,7 +17,9 @@
 
 <body>
 
-  <div id="root">
+
+
+  <div id="kim">
 
   </div>
 
@@ -25,7 +27,8 @@
 
 <script>
 
-  const root = document.getElementById('root');
+  const kim = document.getElementById('kim');
+
 
   function createTag(eleName) {
 
@@ -34,44 +37,34 @@
 
   }
 
+  let h1 = createTag('h1');
+  kim.appendChild(h1).textContent = "@@@@@@김은아@@@@@@";
+
   let ul = createTag('ul');
-  root.appendChild(ul);
+  kim.appendChild(ul);
 
-  const member = ["박수연", "강지민", "정희은", "한유진", "김은아"];
 
-  ul.textContent = "강지민과 소녀들";
-
-  function createUl() {
-
-    for (let i = 0; i < 5; i++) {
-      let li = createTag('li');
-      ul.appendChild(li);
-      li.innerHTML = member[i];
-    }
+  let favorite = ["게임", "양념갈비", "포켓몬", "돈까스", "초콜릿"];
+  for (let i = 0; i < favorite.length; i++) {
+    let li = createTag('li');
+    ul.appendChild(li);
+    li.textContent = favorite[i];
   }
 
-  createUl();
+  h1.style.width = "100px"
+  h1.style.height = "100px"
+  h1.style.textAlign = "center"
 
 
-  console.dir(ul.children[0])
-  let li = ul.children[0];
-  console.dir(li);
-  li.style.Color = "blue";
+  let gameDetail = createTag('p');
 
-  function styling(col) {
 
-    root.style.Color = col;
-  }
+  kim.style.display = "flex";
+  kim.style.flexDirection = "column";
+  kim.style.justifyContent = "center";
+  kim.style.alignItems = "center";
 
-  styling("red");
 
-  // function color(red, blue, yellow) {
-
-  //   "red",
-  //     "blue",
-  //     "yellow"
-
-  // };
 
 
 
