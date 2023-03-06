@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <script>
+
+    const root = document.getElementById('root');
+
+    div.style.backgroundColor = "cyan";
+    div.style.width = "100px";
+    div.style.height = "100px";
+
+    function createTag(tagname) {
+
+      let element = document.createElement(tagname);
+      return element;
+
+    }
+
+
+    function renderTag() {
+
+
+      for (let i = 0; i < 5; i++) {
+
+        let div = createTag('div');
+        root.appendChild(div);
+
+
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>
