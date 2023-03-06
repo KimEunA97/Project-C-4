@@ -16,9 +16,6 @@
 
     const root = document.getElementById('root');
 
-    div.style.backgroundColor = "cyan";
-    div.style.width = "100px";
-    div.style.height = "100px";
 
     function createTag(tagname) {
 
@@ -27,18 +24,70 @@
 
     }
 
-
     function renderTag() {
 
 
       for (let i = 0; i < 5; i++) {
 
-        let div = createTag('div');
+        let div = createTag("div");
         root.appendChild(div);
-
 
       }
     }
+
+    renderTag();
+
+    console.dir(root.children[0]);
+
+
+    root.style.display = "flex";
+
+
+    root.children[0].style.backgroundColor = "cyan";
+    root.children[0].style.width = "100px";
+    root.children[0].style.height = "100px";
+    root.children[0].style.display = "flex";
+
+
+    root.children[1].style.backgroundColor = "red";
+    root.children[1].style.width = "100px";
+    root.children[1].style.height = "100px";
+    root.children[1].style.display = "flex";
+
+
+    root.children[2].style.backgroundColor = "yellow";
+    root.children[2].style.width = "100px";
+    root.children[2].style.height = "100px";
+    root.children[2].style.display = "flex";
+
+
+    root.children[3].style.backgroundColor = "green";
+    root.children[3].style.width = "100px";
+    root.children[3].style.height = "100px";
+    root.children[3].style.display = "flex";
+
+
+    root.children[4].style.backgroundColor = "violet";
+    root.children[4].style.width = "100px";
+    root.children[4].style.height = "100px";
+    root.children[4].style.display = "flex";
+
+
+
+
+
+    let rootFirst = root.children[0]
+
+
+    rooFirst.addEventListener("click", function () {
+
+        
+
+    })
+
+    // if() {
+    //   root.children[i].style.display = "none";
+    // }
 
 
   </script>
